@@ -1,0 +1,19 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+	* I’ve learned the data-tree viewing and this way to see the projects and the tags
+	inside the HTML, I’ve been prepared for this course since a couple of months to
+	do my best and try to get a job after finish it and maybe start the react 		nano-degree.
+
+	* Nothing is easy, I have to keep my eye to detail always and trying to do my 		best,and, probably, still making some noob errors. This is why I’m coursing the 	nano-degree program :)
+
+	* Now, in this lessons, I didn’t find something difficult, a real challenge, 		because the real challenge is improve every-day and be in constant learning 
+	and motivated.
+
+	* I tried to think as a proper developer to solve the problems, analyzing and
+	looking for the success, an the real learning. I used the MDN specifically for 		this project.
