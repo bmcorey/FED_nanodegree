@@ -1,0 +1,41 @@
+/* This is the CSS, I know that is not responsive 
+( Card width should be fixed and include the spacing around the image 
+(Since image is 300px wide, card should be 300px + spacing on either side.
+Card should not expand with the browser window).) */
+
+body{
+	width: 300px;
+	text-align: justify;
+	margin: 20px;
+	padding: 0px 12px;
+	font-size: 14px;
+	font-family: "Times New Roman", Georgia, Serif;
+	border: 1px solid #bcbcbc;
+	-webkit-box-shadow: 8px 8px 9px 1px rgba(168,168,168,1);
+    -moz-box-shadow: 8px 8px 9px 1px rgba(168,168,168,1);
+	box-shadow: 8px 8px 9px 1px rgba(168,168,168,1);
+}
+
+div img{
+	display: block;
+	margin: 0 auto;
+}
+
+.content{
+	border: 2px solid #bcbcbc;
+	padding: 2px 12px;
+	margin: 12px auto;
+}
+
+.content ul{
+	text-align: left;
+	padding: 0;
+}
+
+.content ul li{
+	list-style: none;
+}
+
+.content .list {
+	font-weight: bold;
+}
