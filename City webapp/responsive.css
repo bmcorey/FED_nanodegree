@@ -57,6 +57,10 @@
     width: 32px;
     fill: #E0E0E0;
   }
+
+  .scores .hide {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 550px) {
@@ -93,6 +97,43 @@
   .weather {
     order: 3;
   }
+}
+
+@media screen and (min-width: 750px) {
+
+  body {
+    font-size: 0.9em;
+  }
+
+  .snippet:first-child{
+    margin: 20px auto;
+
+  }
+
+  .snippet {
+    width: 100%;
+    margin: 50px auto;
+    text-align: justify;
+    font-size: 1.1em;
+  }
+
+  .snippet img {
+    width: 18%;
+  }
+
+  .snippet h3 {
+    margin-left: 20%;
+  }
+
+  .snippet p {
+    margin-left: 20%;
+    width: 650px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
 }
 
 @media screen and (min-width: 850px) {
