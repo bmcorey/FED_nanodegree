@@ -1,0 +1,161 @@
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+
+body {
+	width: 100%;
+	background: #000;
+}
+
+article {
+	width: 1000px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+figure:first-child img {
+	padding-top: 50px;
+}
+
+img {
+	max-width: 100%;
+	margin: 5px auto;
+	display: block;
+
+}
+
+figcaption {
+	font-style: italic;
+	text-align: center;
+	margin: 10px auto;
+	font-size: 0.9em;
+}
+
+
+p {
+	width: 750px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0 10px 0;
+	text-align: justify;
+}
+
+footer {
+	width: 1000px;
+	margin: 0 auto;
+	background: #fff;
+	padding-top: 0;
+	padding-bottom: 5px;
+}
+
+footer div {
+	text-align: center;
+	padding-top: 10px;
+}
+
+footer a {
+	color: #000;
+	text-decoration: none;
+}
+
+footer a:last-child{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 2em;
+}
+
+a:hover [class*="zocial-"]:before {
+  color: #3d85c6;
+}
+
+div#social a {
+  margin: 0 1em 0 0;
+}
+
+div#social a:last-of-type {
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+	body {
+		font-size: 0.9em;
+	}
+
+	article {
+		width: 60%;
+		overflow: wrap;
+	}
+
+	p{
+		width: 80%;
+	}
+
+	footer {
+		width: 60%;
+		font-size: 1em;
+	}
+
+	footer div{
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (max-width: 450px){
+
+	footer a {
+		padding: 5px 0;
+		display: block;
+		text-align: center;
+	}
+
+	footer div a:first-child {
+		padding-top: 10px;
+	}
+
+	footer a:last-child{
+		padding-bottom: 0;
+	}
+}
+
+
+	
+
+
+
+
+
+
+
