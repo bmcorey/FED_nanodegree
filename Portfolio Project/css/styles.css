@@ -18,6 +18,8 @@ body {
       float: right; }
   @media only screen and (max-width: 767px) {
     .container {
-      background: green; } }
+      background: green; }
+      .container header {
+        background: #02B3E4; } }
 
 /*# sourceMappingURL=styles.css.map */
