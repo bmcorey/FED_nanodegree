@@ -1,19 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  background: green; }
-  body .container {
-    width: 70%;
-    height: 100vh;
-    margin: 0 auto;
-    background: red; }
-    body .container header {
-      width: 100%;
-      height: 200px;
-      background: yellow; }
-      body .container header img {
-        float: left; }
-      body .container header div {
-        float: right; }
+  background: #ffffff; }
+
+.container {
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+  background: red; }
+  .container header {
+    width: 100%;
+    height: 200px;
+    background: yellow; }
+    .container header img {
+      float: left; }
+    .container header div {
+      float: right; }
+  @media only screen and (max-width: 767px) {
+    .container {
+      background: green; } }
 
 /*# sourceMappingURL=styles.css.map */
