@@ -47,7 +47,6 @@ $breakpoints: (
 
 
 
-<<<<<<< HEAD
 body 											{ background: $color-white; }
 
 .container 										{ width: 70%; height: 100vh; margin: 0 auto; background: inherit;
@@ -70,38 +69,12 @@ body 											{ background: $color-white; }
 	main 										{ background: inherit; 
 		@include mq('laptop', max)  			{ height: 400px; }
 		> img 									{ width: 100%; }
-=======
-body 								{ margin: 0; padding: 0; background: $color-white; }
-
-.container 							{ width: 70%; height: 100vh; margin: 0 auto; background: inherit;
-	@include mq('desktop', max)  				{ width: 100%; margin-left: 20px; margin-right: 20px; }
-
-// HEADER
-
-	header 							{ width: 100%; height: 200px; background: inherit; border-bottom: 2px solid $color-secondary; margin-bottom: 25px;
-		img 						{ float: left; margin: 70px 0 0 0; width: 100px;}
-		div						{ float: right; margin-top: 50px;
-			> h1 					{ font-size: 3em; font-weight: 100; margin-bottom: 5px;	}
-			> h4 					{ font-size: 2em; float: right; margin: 0; } 
-		}
-	}
-
-	@include mq('tablet', max)      			{ background: $color-test2;
-		header 						{ background: $color-accent; }	
-	}
-
-// MAIN
-
-	main 							{ background: inherit; height: 500px; 
-		> img 						{ min-width: 100%; max-height: 100%;}
->>>>>>> origin/master
 	}
 
 // SECTION
 
-	section 						{
+	section 									{
 
-<<<<<<< HEAD
 		>h2										{ color: $color-secondary }
 		.bottom 								{ display: flex; justify-content: space-between; align-items: center; 
 			@include mq('laptop', max) 			{ flex-wrap: wrap;}		
@@ -115,19 +88,6 @@ body 								{ margin: 0; padding: 0; background: $color-white; }
 				
 				&:last-child 					{ margin-right: 0; }
 
-=======
-		>h2						{ color: $color-secondary }
-		.bottom 					{ display: flex; justify-content: space-between; align-items: center;
-			&__article 				{ flex: 1 1 100%; margin: 10px;
-				> img 				{ width: 100%; background: white; margin: 0 auto; display: block; }
-				> h2				{ text-align: center; }
-				> a 				{ display: block; text-align: center; text-decoration: none; color: $color-primary }
-
-				&:first-child 			{margin-left: 0; } 
-				
-				&:last-child 			{ margin-right: 0; }
-				
->>>>>>> origin/master
 			}
 		}
 	}
