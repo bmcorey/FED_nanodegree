@@ -26,7 +26,7 @@ $breakpoints: (
     "phablet":      						560px,
     "tablet-small": 						640px,
     "tablet":       						768px,
-    "tablet-wide":  						1024px,
+    "laptop":		  						1024px,
     "desktop":      						1248px,
     "desktop-wide": 						1440px
 );
@@ -47,29 +47,28 @@ $breakpoints: (
 
 
 
-body 											{ margin: 0; padding: 0; background: $color-white; }
+body 											{ background: $color-white; }
 
 .container 										{ width: 70%; height: 100vh; margin: 0 auto; background: inherit;
-	@include mq('desktop', max)  				{ width: 100%; margin-left: 20px; margin-right: 20px; }
+	@include mq(laptop, min)  					{ width: 90%; margin-left: auto; margin-right: auto; }
+
 
 // HEADER
 
 	header 										{ width: 100%; height: 200px; background: inherit; border-bottom: 2px solid $color-secondary; margin-bottom: 25px;
-		img 									{ float: left; margin: 70px 0 0 0; width: 100px;}
+		img 									{ float: left; margin: 70px 0 0 0; width: 150px;}
 		div										{ float: right; margin-top: 50px;
 			> h1 								{ font-size: 3em; font-weight: 100; margin-bottom: 5px;	}
 			> h4 								{ font-size: 2em; float: right; margin: 0; } 
 		}
 	}
 
-	@include mq('tablet', max)      			{ background: $color-test2;
-		header 									{ background: $color-accent; }	
-	}
 
 // MAIN
 
-	main 										{ background: inherit; height: 500px; 
-		> img 									{ min-width: 100%; max-height: 100%;}
+	main 										{ background: inherit; 
+		@include mq('laptop', max)  			{ height: 400px; }
+		> img 									{ width: 100%; }
 	}
 
 // SECTION
@@ -77,16 +76,18 @@ body 											{ margin: 0; padding: 0; background: $color-white; }
 	section 									{
 
 		>h2										{ color: $color-secondary }
-		.bottom 								{ display: flex; justify-content: space-between; align-items: center;
-			&__article 							{ flex: 1 1 100%; margin: 10px;
+		.bottom 								{ display: flex; justify-content: space-between; align-items: center; 
+			@include mq('laptop', max) 			{ flex-wrap: wrap;}		
+
+			&__article 							{ flex: 1 1 100%; margin: 10px auto 20px auto;
 				> img 							{ width: 100%; background: white; margin: 0 auto; display: block; }
 				> h2							{ text-align: center; }
 				> a 							{ display: block; text-align: center; text-decoration: none; color: $color-primary }
 
-				&:first-child 					{margin-left: 0; } 
+				&:first-child 					{ margin-left: 0; } 
 				
 				&:last-child 					{ margin-right: 0; }
-				
+
 			}
 		}
 	}

@@ -1,86 +1,126 @@
 body {
-  margin: 0;
-  padding: 0;
-  background: #ffffff; }
+  background: #ffffff;
+}
 
 .container {
   width: 70%;
   height: 100vh;
   margin: 0 auto;
-  background: inherit; }
-  @media only screen and (max-width: 1247px) {
-    .container {
-      width: 100%;
-      margin-left: 20px;
-      margin-right: 20px; } }
-  .container header {
-    width: 100%;
-    height: 200px;
-    background: inherit;
-    border-bottom: 2px solid #7D97AD;
-    margin-bottom: 25px; }
-    .container header img {
-      float: left;
-      margin: 70px 0 0 0;
-      width: 100px; }
-    .container header div {
-      float: right;
-      margin-top: 50px; }
-      .container header div > h1 {
-        font-size: 3em;
-        font-weight: 100;
-        margin-bottom: 5px; }
-      .container header div > h4 {
-        font-size: 2em;
-        float: right;
-        margin: 0; }
-  @media only screen and (max-width: 767px) {
-    .container {
-      background: green; }
-      .container header {
-        background: #02B3E4; } }
+  background: inherit;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.container header {
+  width: 100%;
+  height: 200px;
+  background: inherit;
+  border-bottom: 2px solid #7D97AD;
+  margin-bottom: 25px;
+}
+
+.container header img {
+  float: left;
+  margin: 70px 0 0 0;
+  width: 150px;
+}
+
+.container header div {
+  float: right;
+  margin-top: 50px;
+}
+
+.container header div > h1 {
+  font-size: 3em;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.container header div > h4 {
+  font-size: 2em;
+  float: right;
+  margin: 0;
+}
+
+.container main {
+  background: inherit;
+}
+
+@media only screen and (max-width: 1023px) {
   .container main {
-    background: inherit;
-    height: 500px; }
-    .container main > img {
-      min-width: 100%;
-      max-height: 100%; }
-  .container section > h2 {
-    color: #7D97AD; }
+    height: 400px;
+  }
+}
+
+.container main > img {
+  width: 100%;
+}
+
+.container section > h2 {
+  color: #7D97AD;
+}
+
+.container section .bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1023px) {
   .container section .bottom {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .container section .bottom__article {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-      flex: 1 1 100%;
-      margin: 10px; }
-      .container section .bottom__article > img {
-        width: 100%;
-        background: white;
-        margin: 0 auto;
-        display: block; }
-      .container section .bottom__article > h2 {
-        text-align: center; }
-      .container section .bottom__article > a {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        color: #2D3C48; }
-      .container section .bottom__article:first-child {
-        margin-left: 0; }
-      .container section .bottom__article:last-child {
-        margin-right: 0; }
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.container section .bottom__article {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  margin: 10px auto 20px auto;
+}
+
+.container section .bottom__article > img {
+  width: 100%;
+  background: white;
+  margin: 0 auto;
+  display: block;
+}
+
+.container section .bottom__article > h2 {
+  text-align: center;
+}
+
+.container section .bottom__article > a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #2D3C48;
+}
+
+.container section .bottom__article:first-child {
+  margin-left: 0;
+}
+
+.container section .bottom__article:last-child {
+  margin-right: 0;
+}
 
 /*# sourceMappingURL=styles.css.map */
