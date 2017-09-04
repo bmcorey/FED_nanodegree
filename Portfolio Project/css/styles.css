@@ -17,7 +17,7 @@ body {
   }
 }
 
-.container header {
+.container .top {
   width: 100%;
   height: 200px;
   background: inherit;
@@ -25,48 +25,48 @@ body {
   margin-bottom: 25px;
 }
 
-.container header img {
+.container .top img {
   float: left;
   margin: 70px 0 0 0;
   width: 150px;
 }
 
-.container header div {
+.container .top__head {
   float: right;
   margin-top: 50px;
 }
 
-.container header div > h1 {
+.container .top__head > h1 {
   font-size: 3em;
   font-weight: 100;
   margin-bottom: 5px;
 }
 
-.container header div > h4 {
+.container .top__head > p {
   font-size: 2em;
   float: right;
   margin: 0;
 }
 
-.container main {
+.container .content {
   background: inherit;
 }
 
 @media only screen and (max-width: 1023px) {
-  .container main {
+  .container .content {
     height: 400px;
   }
 }
 
-.container main > img {
+.container .content > img {
   width: 100%;
 }
 
-.container section > h2 {
+.container .footer__bar > h2 {
   color: #7D97AD;
 }
 
-.container section .bottom {
+.container .footer__bar .bottom {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -82,14 +82,14 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
-  .container section .bottom {
+  .container .footer__bar .bottom {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
 
-.container section .bottom__article {
+.container .footer__bar .bottom__article {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
@@ -97,29 +97,29 @@ body {
   margin: 10px auto 20px auto;
 }
 
-.container section .bottom__article > img {
+.container .footer__bar .bottom__article > img {
   width: 100%;
   background: white;
   margin: 0 auto;
   display: block;
 }
 
-.container section .bottom__article > h2 {
+.container .footer__bar .bottom__article > h2 {
   text-align: center;
 }
 
-.container section .bottom__article > a {
+.container .footer__bar .bottom__article > a {
   display: block;
   text-align: center;
   text-decoration: none;
   color: #2D3C48;
 }
 
-.container section .bottom__article:first-child {
+.container .footer__bar .bottom__article:first-child {
   margin-left: 0;
 }
 
-.container section .bottom__article:last-child {
+.container .footer__bar .bottom__article:last-child {
   margin-right: 0;
 }
 

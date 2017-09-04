@@ -55,25 +55,25 @@ body 											{ background: $color-white; }
 
 // HEADER
 
-	header 										{ width: 100%; height: 200px; background: inherit; border-bottom: 2px solid $color-secondary; margin-bottom: 25px;
+	.top 										{ width: 100%; height: 200px; background: inherit; border-bottom: 2px solid $color-secondary; margin-bottom: 25px;
 		img 									{ float: left; margin: 70px 0 0 0; width: 150px;}
-		div										{ float: right; margin-top: 50px;
+		&__head										{ float: right; margin-top: 50px;
 			> h1 								{ font-size: 3em; font-weight: 100; margin-bottom: 5px;	}
-			> h4 								{ font-size: 2em; float: right; margin: 0; } 
+			> p 								{ font-size: 2em; float: right; margin: 0; } 
 		}
 	}
 
 
 // MAIN
 
-	main 										{ background: inherit; 
+	.content									{ background: inherit; 
 		@include mq('laptop', max)  			{ height: 400px; }
 		> img 									{ width: 100%; }
 	}
 
 // SECTION
 
-	section 									{
+	.footer__bar 									{
 
 		>h2										{ color: $color-secondary }
 		.bottom 								{ display: flex; justify-content: space-between; align-items: center; 
