@@ -113,6 +113,11 @@ body {
   text-align: center;
   text-decoration: none;
   color: #2D3C48;
+  font-size: 0.8em;
+}
+
+.container .footer__bar .bottom__article > a:hover {
+  text-decoration: underline;
 }
 
 .container .footer__bar .bottom__article:first-child {
